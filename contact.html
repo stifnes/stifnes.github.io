@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stifnes Samuel</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">Stifnes<br />Samuel</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">My Journey</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./work.html">Work</a></li>
+        </ul>
+      </nav>
+      <button
+        class="contact outline"
+        onclick="window.location.href='./contact.html'"
+      >
+        contact
+      </button>
+      <nav class="mobile-menu">
+        <button
+          class="contact-icon-btn"
+          onclick="window.location.href='./contact.html'"
+        >
+          <img src="./images/phone-icon.svg" alt="" />
+        </button>
+        <div>
+          <div class="hamburger" id="hamburgerMenu"></div>
+          <ul id="mobileNavList">
+            <li><a href="./index.html">My Journey</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./work.html">Work</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="grid-2">
+          <div class="grid-item">
+            <h6>We'd love to hear from you</h6>
+            <p>
+              Hello and welcome to my contact page! I'm thrilled that you're interested in getting in touch with me. Whether you have a question, a comment, or just want to say hello, I'd love to hear from you.
+            </p>
+            <ul>
+              <li>
+                <img
+                  src="./images/location-icon.svg"
+                  alt=""
+                  class="contact-icon"
+                />
+                110 Abbey drive, riverston Abbey, NAVAN Rd, Dublin d07k076
+              </li>
+              <li>
+                <img
+                  src="./images/phone-icon-dark.svg"
+                  alt=""
+                  class="contact-icon"
+                />
+                <a href="tel:+353-872105324">+353-872105324</a>
+              </li>
+              <li>
+                <img
+                  src="./images/Mail_inverse.svg"
+                  alt=""
+                  class="contact-icon"
+                />
+                <a href="mailto:samuelstifnes@gmail.com">samuelstifnes@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid-item">
+            <form action="" id="contact-form">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter your name"
+                id="username"
+              />
+              <input type="email" name="email" id="useremail" placeholder="Enter your email" />
+              <textarea
+                type="text"
+                cols="10"
+                rows="10"
+                name="message"
+                id="usermessage"
+                placeholder="Enter your message"
+              ></textarea>
+              <button type="submit" class="fill" onclick="submitForm()">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <div id="success-modal">
+        <p>
+          Thankyou!
+          <span id="name-display">[username]</span>
+          We have received your message. We will get back to your at
+          <span id="email-display">[user-email]</span>
+        </p>
+      </div>
+      <div id="overlay" onclick="closeModal()"></div>
+
+      <footer id="footer">@Copyright - Stifnes Samuel</footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
