@@ -353,7 +353,7 @@ section h2 {
   text-transform: uppercase;
   text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
-  font-size: 7em;
+  font-size: 4em;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -609,6 +609,7 @@ span[id$="display"] {
   background-color: var(--primary-color);
   padding: 1rem;
   object-fit: contain;
+  box-sizing: border-box;
 }
 
 .portfolio-grid-content {
@@ -681,8 +682,8 @@ span[id$="display"] {
 /* Desktop Styles */
 
 @media (width >= 1098px) {
-  h1 {
-    font-size: 64px;
+  .box h1 {
+    font-size: 7em;
   }
 
   h2 {
