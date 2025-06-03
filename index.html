@@ -19,19 +19,24 @@
           <li><a href="./work.html">Work</a></li>
         </ul>
       </nav>
-      <button
-        class="contact outline"
-        onclick="window.location.href='./contact.html'"
-      >
-        contact
-      </button>
-      <nav class="mobile-menu">
-        <button
-          class="contact-icon-btn"
-          onclick="window.location.href='./contact.html'"
-        >
-          <img src="./images/phone-icon.svg" alt="" />
+      <a href="./contact.html">
+        <button class="contact-btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Contact</span>
         </button>
+      </a>
+      <nav class="mobile-menu">
+        <a href="./contact.html">
+          <button
+            class="contact-icon-btn"
+            onclick="window.location.href='./contact.html'"
+          >
+            <img src="./images/phone-icon.svg" alt="" />
+          </button>
+        </a>
         <div>
           <div class="hamburger" id="hamburgerMenu"></div>
           <ul id="mobileNavList">
@@ -46,7 +51,10 @@
     <main>
       <section id="hero">
         <div class="content">
-          <h1>My Journey</h1>
+          <div class="box">
+            <h1>My Journey</h1>
+            <h1>My Journey</h1>
+          </div>
           <h4>This is my journey of becoming a frontend engineer</h4>
           <p>
             This website is a visual representation of how I transitioned from a
@@ -138,9 +146,26 @@
                 </div>
               </li>
             </ul>
-            <button class="fill">
-              <a href="./education.html">See more</a>
-            </button>
+            <a href="./education.html">
+              <button class="fill">
+                <svg
+                  width="180px"
+                  height="60px"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <polyline
+                    points="179,1 179,59 1,59 1,1 179,1"
+                    class="bg-line"
+                  />
+                  <polyline
+                    points="179,1 179,59 1,59 1,1 179,1"
+                    class="hl-line"
+                  />
+                </svg>
+                See more
+              </button>
+            </a>
           </div>
           <div class="grid-item">
             <img src="./images/education-collage.png" alt="" />
@@ -186,11 +211,31 @@
                 </div>
               </li>
             </ul>
-            <button class="fill"><a href="./work.html">See more</a></button>
+            <a href="./work.html">
+              <button class="fill">
+                <svg
+                  width="180px"
+                  height="60px"
+                  viewBox="0 0 180 60"
+                  class="border"
+                >
+                  <polyline
+                    points="179,1 179,59 1,59 1,1 179,1"
+                    class="bg-line"
+                  />
+                  <polyline
+                    points="179,1 179,59 1,59 1,1 179,1"
+                    class="hl-line"
+                  /></svg
+                >See more
+              </button>
+            </a>
           </div>
         </div>
       </section>
       <footer id="footer">@Copyright - Stifnes Samuel</footer>
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
     </main>
     <script src="./script.js"></script>
   </body>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stifnes Samuel</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="./index.html">Stifnes<br />Samuel</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">My Journey</a></li>
+          <li><a href="./education.html">Education</a></li>
+          <li><a href="./work.html" class="active">Work</a></li>
+        </ul>
+      </nav>
+      <a href="./contact.html">
+        <button class="contact-btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Contact</span>
+        </button>
+      </a>
+      <nav class="mobile-menu">
+        <a href="./contact.html">
+          <button
+            class="contact-icon-btn"
+            onclick="window.location.href='./contact.html'"
+          >
+            <img src="./images/phone-icon.svg" alt="" />
+          </button>
+        </a>
+        <div>
+          <div class="hamburger" id="hamburgerMenu"></div>
+          <ul id="mobileNavList">
+            <li><a href="./index.html">My Journey</a></li>
+            <li><a href="./education.html">Education</a></li>
+            <li><a href="./work.html" class="active">Work</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="portfolio">
+      <section id="portfolio">
+        <div class="box">
+          <h1>Portfolio</h1>
+          <h1>Portfolio</h1>
+        </div>
+      </section>
+
+      <section class="portfolio-grid">
+        <a href="https://www.venturedive.com/apac" target="_blank">
+          <div class="portfolio-card">
+            <img
+              src="./images/venD.svg"
+              class="portfolio-grid-image"
+              alt="Project 1"
+            />
+            <h3>VentureDive</h3>
+          </div>
+        </a>
+        <a href="https://www.sendoso.com/" target="_blank">
+          <div class="portfolio-card">
+            <img
+              src="./images/sendoso.svg"
+              class="portfolio-grid-image"
+              alt="Project 2"
+            />
+            <h3>Sendoso</h3>
+          </div>
+        </a>
+        <a href="https://www.bluebanana.agency/" target="_blank">
+          <div class="portfolio-card">
+            <img
+              src="./images/bbbanana.webp"
+              class="portfolio-grid-image"
+              alt="Project 3"
+            />
+            <h3>Blue Banana</h3>
+          </div>
+        </a>
+
+        <a href="https://www.aimfit.com/" target="_blank">
+          <div class="portfolio-card">
+            <img
+              src="./images/aimfit.svg"
+              class="portfolio-grid-image"
+              alt="Project 4"
+            />
+            <h3>Aimfit</h3>
+          </div>
+        </a>
+        <a href="https://simplestudy.com/ie" target="_blank">
+          <div class="portfolio-card">
+            <img
+              src="./images/simple-study.svg"
+              class="portfolio-grid-image"
+              alt="Project 4"
+            />
+            <h3>Simple Study</h3>
+          </div>
+        </a>
+      </section>
+      <footer id="footer">@Copyright - Stifnes Samuel</footer>
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

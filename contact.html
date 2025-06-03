@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stifnes Samuel</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
@@ -19,19 +19,24 @@
           <li><a href="./work.html">Work</a></li>
         </ul>
       </nav>
-      <button
-        class="contact outline"
-        onclick="window.location.href='./contact.html'"
-      >
-        contact
-      </button>
-      <nav class="mobile-menu">
-        <button
-          class="contact-icon-btn"
-          onclick="window.location.href='./contact.html'"
-        >
-          <img src="./images/phone-icon.svg" alt="" />
+      <a href="./contact.html">
+        <button class="contact-btn">
+          <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+            <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+          </svg>
+          <span>Contact</span>
         </button>
+      </a>
+      <nav class="mobile-menu">
+        <a href="./contact.html">
+          <button
+            class="contact-icon-btn"
+            onclick="window.location.href='./contact.html'"
+          >
+            <img src="./images/phone-icon.svg" alt="" />
+          </button>
+        </a>
         <div>
           <div class="hamburger" id="hamburgerMenu"></div>
           <ul id="mobileNavList">
@@ -50,7 +55,10 @@
           <div class="grid-item">
             <h6>We'd love to hear from you</h6>
             <p>
-              Hello and welcome to my contact page! I'm thrilled that you're interested in getting in touch with me. Whether you have a question, a comment, or just want to say hello, I'd love to hear from you.
+              Hello and welcome to my contact page! I'm thrilled that you're
+              interested in getting in touch with me. Whether you have a
+              question, a comment, or just want to say hello, I'd love to hear
+              from you.
             </p>
             <ul>
               <li>
@@ -75,7 +83,9 @@
                   alt=""
                   class="contact-icon"
                 />
-                <a href="mailto:samuelstifnes@gmail.com">samuelstifnes@gmail.com</a>
+                <a href="mailto:samuelstifnes@gmail.com"
+                  >samuelstifnes@gmail.com</a
+                >
               </li>
             </ul>
           </div>
@@ -87,7 +97,12 @@
                 placeholder="Enter your name"
                 id="username"
               />
-              <input type="email" name="email" id="useremail" placeholder="Enter your email" />
+              <input
+                type="email"
+                name="email"
+                id="useremail"
+                placeholder="Enter your email"
+              />
               <textarea
                 type="text"
                 cols="10"
